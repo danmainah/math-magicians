@@ -10,8 +10,9 @@
 
 .card {
   width: 20rem;
-  height: auto;
+  height: 15rem;
   margin: 0%;
+  background: #928f8d;
 }
 
 .text {
