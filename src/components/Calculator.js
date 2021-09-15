@@ -5,11 +5,11 @@ class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        total: 0,
-        next: null,
-        operation: null,
-      };
-      this.handleCalculation = this.handleCalculation.bind(this);
+      total: 0,
+      next: null,
+      operation: null,
+    };
+    this.handleCalculation = this.handleCalculation.bind(this);
   }
 
   handleCalculation(e) {
@@ -23,12 +23,18 @@ class Calculator extends Component {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <div className="text">{total} {operation} {next}</div>
+            <div className="text">
+              {total}
+              {' '}
+              {operation}
+              {' '}
+              {next}
+            </div>
             <div className="row">
               <input className="background col-3" onClick={this.handleCalculation} type="button" value="AC" />
               <input className="background col-3" onClick={this.handleCalculation} type="button" value="+/-" />
-              <input className="background col-3" type="submit" value="%" />
-              <input className="btn  danger col-3" type="reset" value="&divide;" />
+              <input className="background col-3" onClick={this.handleCalculation} type="submit" value="%" />
+              <input className="btn  danger col-3" onClick={this.handleCalculation} type="reset" value="÷" />
             </div>
             <div className="row">
               <input className="background col-3" onClick={this.handleCalculation} type="button" value="7" />
@@ -49,9 +55,9 @@ class Calculator extends Component {
               <input className="btn danger col-3" onClick={this.handleCalculation} type="reset" value="+" />
             </div>
             <div className="row">
-              <button className="background col-6" onClick={this.handleCalculation} type="submit">0</button>
+              <input className="background col-6" onClick={this.handleCalculation} type="submit" value="0" />
               <input className="background col-3" onClick={this.handleCalculation} type="submit" value="." />
-              <input className="btn danger col-3" onClick={this.handleCalculation} onClick={this.handleCalculation} type="reset" value="=" />
+              <input className="btn danger col-3" onClick={this.handleCalculation} type="submit" value="=" />
             </div>
           </div>
         </div>

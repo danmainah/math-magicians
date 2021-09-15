@@ -51,7 +51,7 @@ export default function calculate(obj, buttonName) {
       if (obj.next.includes('.')) {
         return {};
       }
-      return { next: obj.next + '.' };
+      return { next: `${obj.next}.` };
     }
     if (obj.operation) {
       return { next: '0.' };
@@ -60,22 +60,29 @@ export default function calculate(obj, buttonName) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { total: obj.total + '.' };
+      return { total: `${obj.total}.` };
     }
     return { total: '0.' };
   }
 
   if (buttonName === '=') {
     if (obj.next && obj.operation) {
-      return {
-        total: operate(obj.total, obj.next, obj.operation),
-        next: null,
-        operation: null,
-      };
-    } else {
-      // '=' with no operation, nothing to do
-      return {};
+      try {
+        return {
+          total: operate(obj.total, obj.next, obj.operation),
+          next: null,
+          operation: null,
+        };
+      } catch (e) {
+        return {
+          total: 'Error!You cant use zero as Divisor',
+          next: null,
+          operation: null,
+        };
+      }
     }
+    // '=' with no operation, nothing to do
+    return {};
   }
 
   if (buttonName === '+/-') {
