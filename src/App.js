@@ -2,12 +2,10 @@ import './App.css';
 import React from 'react';
 import Calculator from './components/Calculator';
 
-function App() {
-  return (
-    <div className="App">
-      <Calculator />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Calculator />
+  </div>
+);
 
 export default App;
