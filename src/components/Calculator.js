@@ -14,7 +14,9 @@ const Calculator = () => {
 
   return (
     <div className="container">
-      <div className="card">
+      <div className="row">
+      <h3 className = "col-md">Let's do some math!</h3>
+      <div className=" col-md card">
         <div className="card-body">
           <div className="text">
             {state.total}
@@ -54,6 +56,8 @@ const Calculator = () => {
           </div>
         </div>
       </div>
+      </div>
+      
     </div>
   );
 };
