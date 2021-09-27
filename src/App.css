@@ -2,17 +2,16 @@
   text-align: center;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-}
-
 .card {
-  width: 20rem;
-  height: 15rem;
+  width: 100%;
+  height: 50%;
   margin: 0%;
   background: #928f8d;
+}
+
+.card-body {
+  width: auto;
+  height: auto;
 }
 
 .text {
@@ -26,4 +25,32 @@
 
 .background {
   background-color: #d9dbeb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(233, 224, 218);
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul > li {
+  padding: 5px 10px;
+  font-size: 19px;
+  border-right: 1px solid black;
+}
+
+.navbar ul > li:last-child {
+  border-right: none;
+}
+
+.navbar a {
+  color: #25649e;
 }
