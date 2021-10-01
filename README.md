@@ -20,7 +20,8 @@
   - Read simple math quotes.
 
 # Live demo
- to view this site visit `https://6151b8e2a5d486829dfa421d--quizzical-gates-1eca7b.netlify.app/calculator` or
+ to view this site visit `https://6151b8e2a5d486829dfa421d--quizzical-gates-1eca7b.netlify.app/calculator` or `https://react-ca.herokuapp.com/`
+ 
 
 # Installation 
 
