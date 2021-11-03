@@ -21,7 +21,7 @@
 
 # Live demo
 
- to view this site visit[here](https://6151b8e2a5d486829dfa421d--quizzical-gates-1eca7b.netlify.app/calculator) or [here](https://react-ca.herokuapp.com/)
+ to view this site visit [here](https://6151b8e2a5d486829dfa421d--quizzical-gates-1eca7b.netlify.app/calculator) or [here](https://react-ca.herokuapp.com/)
  
 
 # Installation 
