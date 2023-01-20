@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 ![](https://img.shields.io/badge/HTML-red)
 ![](https://img.shields.io/badge/JavaScript-yellow)
 ![](https://img.shields.io/badge/React-blue)
@@ -32,7 +31,8 @@ In case you want the project to run on your local machine and not the live demo
   - Run `yarn install`
   - Run `yarn start`
 
-# Author 👤
+<h3><b>Author</b></h3>
+
 **Daniel Maina**
   - Github : [@danmainah](https://github.com/danmainah/)
   - Twitter: [@danmainah](https://twitter.com/danmainah)
